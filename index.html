@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Remix: endless runner </title>
+    <meta name="description" content="Race through a stunning synthwave cosmos at breakneck speeds in this retro-futuristic runner." />
+    <meta property="og:title" content="Remix: endless runner " />
+    <meta property="og:description" content="Race through a stunning synthwave cosmos at breakneck speeds in this retro-futuristic runner." />
+    
+    <!-- Google AdSense / H5 Games Ads Integration -->
+    <script>
+      (function() {
+        var defaultPubId = 'ca-pub-1897225080989873';
+        var savedPubId = '';
+        try { savedPubId = localStorage.getItem('google_ads_pub_id'); } catch(e) {}
+        var activePubId = (savedPubId && savedPubId.trim()) ? savedPubId.trim() : defaultPubId;
+        if (activePubId && !activePubId.startsWith('ca-pub-') && activePubId.startsWith('pub-')) {
+          activePubId = 'ca-' + activePubId;
+        }
+        var s = document.createElement('script');
+        s.id = 'google-adsense-script';
+        s.async = true;
+        s.crossOrigin = 'anonymous';
+        s.setAttribute('data-ad-client', activePubId);
+        s.setAttribute('data-ad-frequency-hint', '30s');
+        s.setAttribute('data-adbreak-test', 'on');
+        s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + activePubId;
+        document.head.appendChild(s);
+      })();
+    </script>
+    <script>
+      window.adsbygoogle = window.adsbygoogle || [];
+      window.adBreak = window.adBreak || function(o) { (adsbygoogle.push(o)); };
+      window.adConfig = window.adConfig || function(o) { (adsbygoogle.push(o)); };
+      
+      // Configure H5 games ad settings
+      adConfig({
+        preloadAdBreaks: 'on',
+        sound: 'on'
+      });
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #050011;
+        font-family: 'Rajdhani', sans-serif;
+        touch-action: pan-y pinch-zoom; /* Enable touch scrolling & gestures */
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-y: none;
+      }
+      .font-cyber {
+        font-family: 'Orbitron', sans-serif;
+      }
+      /* Custom cyber scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050011;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e1b4b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #06b6d4;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.0/",
+    "react": "https://esm.sh/react@^19.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.553.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.0/",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.0",
+    "zustand": "https://esm.sh/zustand@^5.0.8",
+    "uuid": "https://esm.sh/uuid@^13.0.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "three": "https://esm.sh/three@^0.181.1",
+    "postprocessing": "https://esm.sh/postprocessing@^6.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
